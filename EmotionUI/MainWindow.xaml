@@ -1,0 +1,23 @@
+﻿<Window x:Class="EmotionUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmotionUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="666.489">
+    <Grid>
+        <Image x:Name="FaceImage" Stretch="Uniform" Margin="0,0,0,50"/>
+        <DockPanel DockPanel.Dock="Bottom">
+            <Button x:Name="StartGame" Width="97" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Left"
+                    Content="Comenzar juego"
+                    Click="StartGame_Click" />
+            <StatusBar VerticalAlignment="Bottom">
+                <StatusBarItem>
+                    <TextBlock Name="faceDescriptionStatusBar" />
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
+
+    </Grid>
+</Window>
